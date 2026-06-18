@@ -1,0 +1,40 @@
+name: closphere
+description: High-End Archival Rental Platform - CEO Edition.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.2.0 # <-- ADDED THIS LINE FOR DATABASE WI-FI CONNECTION
+  intl: ^0.20.2
+  url_launcher: ^6.3.2
+  supabase_flutter: ^2.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  # Package to generate the Bold C icon
+  flutter_launcher_icons: "^0.13.1"
+
+# --- ICON CONFIGURATION ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  # --- ASSET REGISTRATION ---
+  assets:
+    - assets/icon/
